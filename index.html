@@ -5,22 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nice Style</title>
-
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <header id="cabecalho">
-        <!--<img src="imgLogo.png" alt="logo da nossa loja">-->
-        <h1>Nice Style</h1>
-       
 
-        <nav>
-            <button id="navegacao"></button>
+    <!--cabeçalho-->
+    <header id="cabecalho">
+        <img id="logo" src="imgLogo.png" alt="logo da nossa loja">
+
+        <!--Menu navegação-->
+        <nav class="nav1">
+            <button id="navegacao">Home</button>
+            <button id="navegacao">Sobre</button>
+            <button id="navegacao">Promoções</button>
+            <button id="navegacao">Produtos</button>
+            <button id="navegacao">Contato</button>
         </nav>
     </header>
 
+    <!--conteúdo principal da página-->
+    <main>
+        <h1>Seja bem-vindo</h1>
+        <p>Seja bem-vindo ao lugar em que você vai encontrar a nata do estilo.
+        </p>
 
+        <div class="slider">
+            <div class="slides">
 
+                <!--Radio Botões-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- fim Radio Botões-->
+
+                <!-- Slides-->
+                <div class="slide first">
+                    <img src="./imgs/camisa2.jpg" alt="primeiraImagem">
+                </div>
+                <div class="slide">
+                    <img src="./img/camisa3.jpg" alt="segundaImagem">
+                </div>
+                <div class="slide">
+                    <img src="" alt="terceiraImagem">
+                </div>
+                <div class="slide">
+                    <img src="" alt="quartaImagem">
+                </div>
+
+                <!-- fIM Slides-->
+
+                <!-- Navegação Auto-->
+
+                <div class="navegacaoAuto">
+                    <div class="autoBtn1"></div>
+                    <div class="autoBtn2"></div>
+                    <div class="autoBtn3"></div>
+                    <div class="autoBtn4"></div>
+                </div>
+            </div>
+            <div class="navManu">
+                <label for="radio1" class="manu1"></label>
+                <label for="radio2" class="manu2"></label>
+                <label for="radio3" class="manu3"></label>
+                <label for="radio4" class="manu4"></label>
+            </div>
+
+        </div>
+
+        <!--Roupas da loja-->
+        <h1>Roupas</h1>
+        <div class="roupas">
+            <h2>Calças</h2>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+
+            <h2>Camisas</h2>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+
+            <h2>Jaquetas</h2>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+
+            <h2>Camisetas</h2>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+
+            <h2>Vestidos</h2>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+
+            <h2>Tênis</h2>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+
+            <h2>Sapatos</h2>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </main>
 </body>
 
 </html>
