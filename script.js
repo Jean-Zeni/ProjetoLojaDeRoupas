@@ -1,47 +1,38 @@
-// Slider
-document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelector(".slides")
-    const prevBtn = document.querySelector("#prev-btn")
-    const proxBtn = document.querySelector("#prox-btn")
-    const slideWidth = document.querySelector(".slides img").clientWidth
+// CONTADOR
 
-    let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", function(){
 
-    function movedorDeSlides(index){
-        currentIndex = index;
-        slides.style.transform = `translateX(${currentIndex * slideWidth}px)`
+    const elementoContador = this.getElementById('contador')
+
+    function updateContador(){
+
+        const dataEvento = new Date("2024-07-18T19:00:00").getTime()
+        const dataHoje = new Date().getTime()
+
+        const diferenca = dataEvento - dataHoje
+
+        const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24))
+        const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 *60))
+        const mins = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60))
+        const seg = Math.floor((diferenca % (1000 * 60)) / 1000)
+
+        document.getElementById('dias').innerText = dias
+        document.getElementById('horas').innerText = horas
+        document.getElementById('min').innerText = mins
+        document.getElementById('seg').innerText = seg
     }
 
-    function proxSlide(){
-        if(currentIndex < slides.children.length - 1){
-            currentIndex++
-        }else{
-            currentIndex=0
-        }
-        movedorDeSlides(currentIndex)
-    }
-
-    function prevSlide(){
-        if(currentIndex > 0){
-            currentIndex--
-        }else{
-            currentIndex = slides.children.length - 1
-        }
-        movedorDeSlides(currentIndex)
-    }
-
-    proxBtn.addEventListener("click", proxSlide)
-    prevBtn.addEventListener("click", prevSlide)
-
-    setInterval(proxSlide, 3000)
+    setInterval(updateContador, 1000)
 })
 
+//FIM DO CONTADOR
+
 //-----------------------------------------------------------------------------------------
-function clickMenu(){
-    nav1=document.getElementById("nav1")
-    if(nav1.style.display =='block'){
-    nav1.style.display='none'
-}else{
-    nav1.style.display = 'block'
-}
+function clickMenu1() {
+    nav1 = document.getElementById("nav1")
+    if (nav1.style.display == 'block') {
+        nav1.style.display = 'none'
+    } else {
+        nav1.style.display = 'block'
+    }
 }

@@ -14,80 +14,96 @@ body {
     }
 }
 
-/* Recurso Slider e slides*/
-.recursoSlider {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    transform: transform 0.5s ease-in-out;
-}
-
-.slides img {
-    width: auto;
-    height: auto;
-}
-
-
-.btn-nav {
-    position: absolute;
-    top: 50%;
-    transform: rotateY(-50%);
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#prev-btn {
-    left: 10px;
-}
-
-#prox-btn {
-    right: 10px;
-}
-
-
-
-
+/*
 
 /* cabeçalho do site */
+
 header {
     background-color: rgb(214, 214, 214);
     padding: 5px;
-    justify-content: space-between;
     align-items: center;
     display: flex;
     height: 50p;
+}
 
-    /* botão do cabeçalho */
-    button {
-        font-size: 15px;
+/* botão do cabeçalho */
+
+#nav1 {
+    display: flex;
+}
+
+#menuHamb {
+    display: none;
+}
+
+.itens {
+    text-decoration: none;
+    color: blue;
+    margin-left: 20px;
+}
+
+@media (max-width: 300px) {
+    header {
+        background-color: rgb(214, 214, 214);
+        padding: 5px;
+        height: 50p;
+        display: flex;
+    }
+
+    #nav1 {
+        display: none;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    #menuHamb {
+        color: black;
+        display: block;
+        height: 25px;
+        margin-right: 0px;
         cursor: pointer;
     }
 
-   
-
-
-        #menuHamb {
-            display: none;
-            margin-right: 0px;
-            cursor: pointer;
-        }
-    
+    #menuHamb:hover {
+        color: gray;
+    }
 }
 
+
+/* Estilização do contador */
+
+.containerContador {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contador span {
+    display: block;
+    color: white;
+    margin-left: 30px;
+    margin-left: 30px;
+    font-size: 75px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(4, 118, 152);
+    border-radius: 8px;
+    min-width: 75px;
+}
+
+.smallText {
+    font-size: 32px;
+}
+
+/* Fim da estilização do contador */
 
 /* logotipo da loja */
 #logo {
     width: 150px;
-}
-
-#nav1 {
-    display: none;
 }
