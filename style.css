@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
-/* Interface do site */
+/* INTERFACE GERAL DO SITE */
 body {
     padding: 0;
     margin: 0;
@@ -13,20 +13,23 @@ body {
         font-size: 25px;
     }
 }
+/* FIM DA INTERFACE GERAL DO SITE */
 
-/*
 
-/* cabeçalho do site */
 
+/* CABECALHO DO SITE */
 header {
     background-color: rgb(214, 214, 214);
     padding: 5px;
     align-items: center;
     display: flex;
     height: 50p;
-}
 
-/* botão do cabeçalho */
+    #logo {
+        width: 100px;
+    }
+}
+/* BOTAO DO CABECALHO */
 
 #nav1 {
     display: flex;
@@ -40,6 +43,14 @@ header {
     text-decoration: none;
     color: blue;
     margin-left: 20px;
+}
+
+.itens:hover{
+    color: red;
+}
+
+.itens:active{
+    color: purple;
 }
 
 @media (max-width: 300px) {
@@ -70,8 +81,7 @@ header {
 }
 
 
-/* Estilização do contador */
-
+/* ESTILIZAÇÃO DO CONTADOR */
 .containerContador {
     text-align: center;
     margin-top: 50px;
@@ -100,10 +110,12 @@ header {
 .smallText {
     font-size: 32px;
 }
+/* FIM DA ESTILIZAÇÃO DO CONTADOR */
 
-/* Fim da estilização do contador */
+/* RODAPÉ */
 
-/* logotipo da loja */
-#logo {
-    width: 150px;
+footer{
+    background-color: rgb(214, 214, 214);
+    padding: 5px;
+    padding-left: 20px;
 }

@@ -1,5 +1,4 @@
 // CONTADOR
-
 document.addEventListener("DOMContentLoaded", function(){
 
     const elementoContador = this.getElementById('contador')
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     setInterval(updateContador, 1000)
 })
-
 //FIM DO CONTADOR
 
 //-----------------------------------------------------------------------------------------
