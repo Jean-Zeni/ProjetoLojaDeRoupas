@@ -16,18 +16,38 @@
     <!--CABECALHO-->
     <header id="cabecalho">
         <img id="logo" src="./imgs/imgLogo.png" alt="Logomarca da loja">
-
         <!-- MENU NAV -->
         <nav id="nav1">
-            <a href="" class="itens">Home</a>
-            <a href="" class="itens">Sobre</a>
-            <a href="" class="itens">Promoções</a>
-            <a href="" class="itens">Produtos</a>
-            <a href="" class="itens">Contato</a>
         </nav>
+        
+<div class="formulario">
+    <div id="nomecima"></div>
+    <form id="gmail" action="https://formsubmit.co/dalopes658@gmail.com" method="POST">
+      <p>Acompanhe as novidades:</p>
+      <input type="text" name="name" placeholder="Digite seu nome" required>
+      <input type="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <button type="submit">ENVIAR</button>
+
+      <input id="" type="hidden" name="message" value="mais um otario mandou o gmail no site :)">
+      <input type="hidden" name="_subject" value="site de roupas">
+      <input type="text" name="_honey" style="display:none">
+
+
+    </form>
+</div>
+
         <span id="menuHamb" class="material-symbols-outlined" onclick="clickMenu1()">
             menu
         </span>
+        
+        <ul>
+            <li><a href="" class="itens">Home</a></li>
+            <li><a href="" class="itens">Sobre</a></li>
+            <li><a href="" class="itens">Promoções</a></li>
+            <li><a href="" class="itens">Produtos</a></li>
+            <li><a href="" class="itens">Contato</a></li>
+        </ul>
         <!-- FIM DO MENU DE NAVEGAÇÃO -->
     </header>
     <!-- FIM DO CABEÇALHO -->
@@ -40,7 +60,7 @@
         <!-- CONTADOR REGRESSIVO -->
         <div class="containerContador">
 
-            <h1> Tempo até nossa inauguração...</h1>
+            <h1 class="bemVindo"> Tempo até nossa inauguração...</h1>
 
             <div id="contador">
 
@@ -73,61 +93,111 @@
         <!-- ROUPAS DA LOJA -->
         <h1>Produtos</h1>
         <div class="roupas">
-            <h2>Calças</h2>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-
-            <h2>Camisas</h2>
-            <img class="camisas" src="" alt="">
-            <img class="camisas" src="" alt="">
-            <img class="camisas" src="" alt="">
-            <img class="camisas" src="" alt="">
-            <img class="camisas" src="" alt="">
-            <img class="camisas" src="" alt="">
 
             <h2>Jaquetas</h2>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+
+            <div id="jaquetas">
+            <div class="cards">
+                <img src="./imgs/roupas/jaqueta1.png" alt="jaqueta nº1">
+                <p>Tamanho: M</p>
+                <p>Cores: Preto, Marrom</p>
+                <p>Preço: R$500,00</p>
+            </div>
+            
+            <div class="cards">
+                <img src="./imgs/roupas/jaqueta2.png" alt="jaqueta nº2">
+                <p>Tamanho: P, M e G</p>
+                <p>Cores: Preto, azul-marinho</p>
+                <p>Preço: R$170,00</p>
+            </div>
+
+            <div class="cards">
+                <img src="./imgs/roupas/jaqueta3.png" alt="jaqueta nº3">
+                <p>Tamanho: P, M e G</p>
+                <p>Cores: Preto</p>
+                <p>Preço: R$350,00</p>
+            </div>
+
+            <div class="cards">
+                <img src="./imgs/roupas/jaqueta4.png" alt="jaqueta nº4">
+                <p>Tamanho: P, M e G</p>
+                <p>Cores: Bege, rosa e ciano</p>
+                <p>Preço: R$120,00</p>
+            </div>
+            
+        </div>
+
+            <h2>Camisas</h2>
+
+            <div id="camisas">
+                <div class="cards">
+                    <img src="./imgs/roupas/camisa1.png" alt="Camisa nº1">
+                    <p>Tamanho: P e M</p>
+                    <p>Cores: Preta, Branca</p>
+                    <p>Preço: R$90,00</p>
+                </div>
+                
+                <div class="cards">
+                    <img src="./imgs/roupas/camisa2.png" alt="camisa nº2">
+                    <p>Tamanho: P, M e G</p>
+                    <p>Cores: Cor única</p>
+                    <p>Preço: R$70,00</p>
+                </div>
+    
+                <div class="cards">
+                    <img src="./imgs/roupas/camisa3.png" alt="camisa nº3">
+                    <p>Tamanho: P, M e G</p>
+                    <p>Cores: Rosa bebê, branca</p>
+                    <p>Preço: R$80,00</p>
+                </div>
+    
+                <div class="cards">
+                    <img src="./imgs/roupas/camisa4.png" alt="camisa nº4">
+                    <p>Tamanho: P, M</p>
+                    <p>Cores: Bege, branco</p>
+                    <p>Preço: R$60,00</p>
+                </div>
+                
+            </div>
 
             <h2>Camisetas</h2>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            
+             <div id="camisetas">
+                <div class="cards">
+                    <img src="./imgs/roupas/camiseta1.png" alt="Camiseta nº1">
+                    <p>Tamanho: P, M e G</p>
+                    <p>Cores:Cor única</p>
+                    <p>Preço: R$90,00</p>
+                </div>
+                
+                <div class="cards">
+                    <img src="./imgs/roupas/camiseta2.png" alt="camiseta nº2">
+                    <p>Tamanho: P, M e G</p>
+                    <p>Cores: Preta, cinza, branca</p>
+                    <p>Preço: R$100,00</p>
+                </div>
+    
+                <div class="cards">
+                    <img src="./imgs/roupas/camiseta3.png" alt="camiseta nº3">
+                    <p>Tamanho: P, M e G</p>
+                    <p>Cores: Cor única</p>
+                    <p>Preço: R$100,00</p>
+                </div>
+                
+            </div>
+
 
             <h2>Vestidos</h2>
             <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+         
 
             <h2>Tênis</h2>
             <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+           
 
             <h2>Sapatos</h2>
             <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+           
         </div>
         <!-- FIM DA SEÇÃO DE ROUPAS -->
 
@@ -140,7 +210,7 @@
         <p>Rede social 1</p>
         <p>Rede social 2</p>
     </footer>
-<!-- FIM DO RODAPÉ DO SITE -->
+    <!-- FIM DO RODAPÉ DO SITE -->
 
 
 </body>
