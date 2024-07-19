@@ -2,170 +2,328 @@
 
 /* INTERFACE GERAL DO SITE */
 
-@media (min-width: 601px){
-body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    display: flexbox;
-    font-family: "DM Serif Display", serif;
+@media (min-width: 601px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        display: flexbox;
+        font-family: "DM Serif Display", serif;
 
-    p {
-        font-size: 25px;
+        p {
+            font-size: 25px;
+        }
     }
-}
 
-main {
-    padding-top: 150px;
-}
-
-#navBar{
-    display: flex;
-    margin-left: 25%;
-    color: black;
-}
-
-#navBar li{
-    text-decoration: none;
-    list-style-type: none;
-}
-
-/* FIM DA INTERFACE GERAL DO SITE */
-
-
-
-/* CABECALHO DO SITE */
-header {
-    margin-top: 0;
-    position: fixed;
-    background-color: rgb(214, 214, 214);
-    padding: 5px;
-    margin: 0;
-    border: 0;
-    align-items: center;
-    display: flex;
-    height: 100px;
-    width: 100vw;
-
-
-    #logo {
-        width: 100px;
+    main {
+        padding-top: 150px;
     }
-}
 
-/* BOTAO DO CABECALHO */
-
-#nav1 {
-    display: flex;
-
-}
-
-#menuHamb {
-    display: none;
-}
-
-.itens {
-    text-decoration: none;
-    color: blue;
-    margin-left: 20px;
-}
-
-.itens:hover {
-    color: red;
-}
-
-.itens:active {
-    color: purple;
-}
-
-/* MENU DE ROUPAS */
-
-.produtos {
-    display: grid;
-    grid-template-rows: repeat(6);
-}
-
-/* FIM DO MENU DE ROUPAS */
-
-/* CARDS DE ROUPAS */
-
-.cards {
-    width: 10px;
-    display: grid;
-    background-color: rgb(214, 214, 214);
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    font-size: 10px;
-    margin: 0;
-    margin-left: 10px;
-    padding-right: 190px;
-    text-align: center;
-    height: auto;
-
-    p {
-        font-size: 20px;
-        margin-bottom: 0;
+    #navBar {
+        display: flex;
+        margin-left: 25%;
+        color: black;
     }
-}
+
+    #navBar li {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    /* FIM DA INTERFACE GERAL DO SITE */
 
 
-#jaquetas {
-    display: flex;
-    gap: 10px;
-}
 
-#camisas {
-    display: flex;
-    gap: 10px;
-}
-
-#camisetas {
-    display: flex;
-    gap: 10px;
-}
-
-#vest {
-    display: flex;
-    gap: 10px;
-}
-
-#calcas {
-    display: flex;
-    gap: 10px;
-}
-
-#calcados {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-main h2{
-    font-size: 40px;
-    font-style: italic;
-    text-decoration: underline;
-}
-
-.cards img {
-    width: 200px;
-}
-
-/* FIM DOS CARDS */
-}
-/* EM TELAS DE CELULAR */
-@media (max-width: 600px) {
-    #cabecalho {
+    /* CABECALHO DO SITE */
+    header {
+        margin-top: 0;
+        position: fixed;
         background-color: rgb(214, 214, 214);
         padding: 5px;
-        height: 50p;
+        margin: 0;
+        border: 0;
+        align-items: center;
         display: flex;
-        width: 600px;
+        height: 100px;
+        width: 100vw;
+        z-index: 10;
+
         #logo {
             width: 100px;
         }
     }
+
+    /* BOTAO DO CABECALHO */
+
+    #nav1 {
+        display: flex;
+
+    }
+
+    #menuHamb {
+        display: none;
+    }
+
+    .itens {
+        text-decoration: none;
+        color: blue;
+        margin-left: 20px;
+    }
+
+    .itens:hover {
+        color: red;
+    }
+
+    .itens:active {
+        color: purple;
+    }
+
+    /* SLIDER */
+
+    #slider {
+        position: relative;
+        width: 50%;
+        max-width: 300px;
+        margin: auto;
+        overflow: hidden;
+        border: 1px solid #000000;
+        border-radius: 10px;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .slide img {
+        width: 100%;
+        display: block;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .navigation button {
+        background-color: rgb(214, 214, 214);
+        border: none;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 30%;
+    }
+
+    .navigation button:hover {
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    /* FIM DO SLIDER */
+
+    /* CONTADOR PC */
+
+    .containerContador {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    #contador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #contador span {
+        display: block;
+        color: white;
+        margin-left: 30px;
+        margin-left: 30px;
+        font-size: 75px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgb(4, 118, 152);
+        border-radius: 8px;
+        min-width: 75px;
+    }
+    
+    .smallText {
+        font-size: 32px;
+    }
+    
+
+    /* FIM DO CONTADOR PC */
+
+    /* MENU DE ROUPAS */
+
+    .produtos {
+        display: grid;
+        grid-template-rows: repeat(6);
+    }
+
+    /* FIM DO MENU DE ROUPAS */
+
+    /* CARDS DE ROUPAS */
+
+    .cards {
+        width: 10px;
+        display: grid;
+        background-color: rgb(214, 214, 214);
+        border: 1px;
+        border-style: solid;
+        border-color: black;
+        font-size: 10px;
+        margin: 0;
+        margin-left: 10px;
+        padding-right: 190px;
+        text-align: center;
+        height: auto;
+
+        p {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+
+
+    #jaquetas {
+        display: flex;
+        gap: 10px;
+    }
+
+    #camisas {
+        display: flex;
+        gap: 10px;
+    }
+
+    #camisetas {
+        display: flex;
+        gap: 10px;
+    }
+
+    #vest {
+        display: flex;
+        gap: 10px;
+    }
+
+    #calcas {
+        display: flex;
+        gap: 10px;
+    }
+
+    #calcados {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    main h2 {
+        font-size: 40px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    .cards img {
+        width: 200px;
+    }
+
+    /* FIM DOS CARDS */
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: rgb(214, 214, 214);
+}
+
+#visaoMissao {
+    background-color: rgb(214, 214, 214);
+    margin: 0;
+    padding: 10px;
+}
+
+#nossaHist {
+    background-color: rgb(214, 214, 214);
+    margin: 0;
+    padding: 10px;
+}
+
+/* FIM DO RODAPÉ */
+
+/* EM TELAS DE CELULAR */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #cabecalho {
+        background-color: rgb(214, 214, 214);
+        padding: 5px;
+        height: 100px;
+        display: flex;
+        width: 100vw;
+        margin: 0;
+        border: 0;
+
+        #logo {
+            width: 100px;
+        }
+    }
+
+    /* ESTILIZÇÃO DO SLIDER EM CELULAR */
+    #slider {
+        position: relative;
+        min-width: 100px;
+        max-width: 200px;
+        margin: auto;
+        overflow: hidden;
+        border: 1px solid #000000;
+        border-radius: 10px;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .slide img {
+        width: 100%;
+        display: block;
+    }
+
+    .navigation button {
+        background-color: rgb(214, 214, 214);
+        border: none;
+        color: black;
+        padding: 20px;
+        border-radius: 30%;
+    }
+
+    .next {
+        position: absolute;
+        right: 0;
+    }
+
+    /* FIM DO SLIDER MOBILE */
 
     #nav1 {
         display: none;
@@ -186,63 +344,149 @@ main h2{
     #menuHamb:hover {
         color: gray;
     }
-}
 
-.bemVindo {
-    margin-top: 20px;
-}
 
-/* ESTILIZAÇÃO DO CONTADOR */
-.containerContador {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+    .bemVindo {
+        margin-top: 20px;
+    }
 
-#contador {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    /* ESTILIZAÇÃO DO CONTADOR */
+    .containerContador {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
-#contador span {
-    display: block;
-    color: white;
-    margin-left: 30px;
-    margin-left: 30px;
-    font-size: 75px;
-    font-weight: bold;
-    padding: 10px;
-    background-color: rgb(4, 118, 152);
-    border-radius: 8px;
-    min-width: 75px;
-}
+    #contador {
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.smallText {
-    font-size: 32px;
-}
+    #contador span {
+        display: block;
+        color: white;
+        margin-left: 30px;
+        margin-left: 30px;
+        font-size: 75px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgb(4, 118, 152);
+        border-radius: 8px;
+        min-width: 75px;
+    }
 
-/* FIM DA ESTILIZAÇÃO DO CONTADOR */
+    .smallText {
+        font-size: 32px;
+    }
 
-/* RODAPÉ */
+    /* FIM DA ESTILIZAÇÃO DO CONTADOR */
 
-footer {
-    background-color: rgb(214, 214, 214);
-    display: flexbox;
-    margin: 0;
-    padding: 5px;
-    padding-left: 20px;
-}
+    /* CARDS DE ROUPAS MOBILE */
+    .cards {
+        width: 10px;
+        display: grid;
+        background-color: rgb(214, 214, 214);
+        border: 1px;
+        border-style: solid;
+        border-color: black;
+        font-size: 10px;
+        margin: 0;
+        margin-left: 5px;
+        padding-right: 190px;
+        text-align: center;
+        height: auto;
 
-#contatos{
-    display: grid;
-}
+        p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+    }
 
-#contatos img{
-    width: 20px;
-    margin-right: 3px;
-}
 
-#sobre{
-    background-color: rgb(214, 214, 214);
+    #jaquetas {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
+    }
+
+    #camisas {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
+    }
+
+    #camisetas {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
+    }
+
+    #vest {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
+    }
+
+    #calcas {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
+    }
+
+    #calcados {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    main h2 {
+        font-size: 40px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    .cards img {
+        width: 200px;
+    }
+
+    /* FIM DOS CARDS MOBILE */
+
+    /* RODAPÉ */
+
+    footer {
+        background-color: rgb(214, 214, 214);
+        display: flexbox;
+        margin: 0;
+        width: 475px;
+        padding: 5px;
+        padding-left: 20px;
+    }
+
+    #contatos {
+        display: grid;
+        font-size: 20px;
+    }
+
+    #contatos img {
+        width: 20px;
+        margin-right: 3px;
+    }
+
+    #sobre {
+        display: grid;
+        background-color: rgb(214, 214, 214);
+    }
+
+    #nossaHist {
+        display: grid;
+        padding-left: 5px;
+    }
+
+    #visaoMissao {
+        display: grid;
+        padding-left: 5px;
+    }
 }
