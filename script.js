@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function updateContador(){
 
-        const dataEvento = new Date("2024-07-18T19:00:00").getTime()
+        const dataEvento = new Date("2024-07-19T19:00:00").getTime()
         const dataHoje = new Date().getTime()
 
         const diferenca = dataEvento - dataHoje

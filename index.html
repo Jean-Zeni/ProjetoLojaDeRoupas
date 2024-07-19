@@ -20,33 +20,16 @@
         <nav id="nav1">
         </nav>
 
-        <div class="formulario">
-            <div id="nomecima"></div>
-            <form id="gmail" action="https://formsubmit.co/dalopes658@gmail.com" method="POST">
-                <p>Acompanhe as novidades:</p>
-                <input type="text" name="name" placeholder="Digite seu nome" required>
-                <input type="email" name="email" placeholder="Digite seu e-mail" required>
-
-                <button type="submit">ENVIAR</button>
-
-                <input id="" type="hidden" name="message" value="mais um otario mandou o gmail no site :)">
-                <input type="hidden" name="_subject" value="site de roupas">
-                <input type="text" name="_honey" style="display:none">
-
-
-            </form>
-        </div>
-
         <span id="menuHamb" class="material-symbols-outlined" onclick="clickMenu1()">
             menu
         </span>
 
-        <ul>
-            <li><a href="" class="itens">Home</a></li>
-            <li><a href="" class="itens">Sobre</a></li>
+        <ul id="navBar">
+            <li><a href="#home" class="itens">Home</a></li>
+            <li><a href="#sobre" class="itens">Sobre</a></li>
             <li><a href="" class="itens">Promoções</a></li>
-            <li><a href="" class="itens">Produtos</a></li>
-            <li><a href="" class="itens">Contato</a></li>
+            <li><a href="#produtos" class="itens">Produtos</a></li>
+            <li><a href="#contatos" class="itens">Contato</a></li>
         </ul>
         <!-- FIM DO MENU DE NAVEGAÇÃO -->
     </header>
@@ -54,9 +37,10 @@
 
     <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
     <main>
-        <h1>Seja bem-vindo</h1>
-        <p>Seja bem-vindo ao lugar em que você vai encontrar a nata do estilo.</p>
-
+        <div id="home">
+            <h1>Seja bem-vindo</h1>
+            <p>Seja bem-vindo ao lugar em que você vai encontrar a nata do estilo.</p>
+        </div>
         <!-- CONTADOR REGRESSIVO -->
         <div class="containerContador">
 
@@ -91,10 +75,11 @@
 
 
         <!-- ROUPAS DA LOJA -->
-        <h1>Produtos</h1>
-        <div class="roupas">
+        <div class="produtos" id="produtos">
+            <h1>Produtos</h1>
 
             <h2>Jaquetas</h2>
+
 
             <div id="jaquetas">
                 <div class="cards">
@@ -304,14 +289,63 @@
     </main>
     <!-- FIM DO CONTEÚDO PRINCIPAL DA LOJA -->
 
+
+    <div id="sobre">
+        <h2>Nossa história</h2>
+        <p>Nossa história começa em um pequeno brechó, onde vendíamos roupas usadas, mas que ainda traziam consigo a
+            dignidade de serem chamadas ‘roupas de qualidade’, pois esse ramo sempre nos chamou atenção.
+            <br>Logo depois, quando vimos que poderíamos subir de nível, abrimos uma pequena loja dentro de uma galeria
+            comercial, onde a nossa marca se fortaleceu e ganhou uma fama consideravelmente grande. <br>
+            Certamente que não continuamos a vender roupas usadas, pois as coisas evoluíram (inclusive nós mesmos);
+            passamos, então, a vender roupas de verdadeira qualidade, novinhas e de grande estilo. <br>
+            Hoje em dia estamos mais maduros e cada vez crescendo mais. Nossa mais nova loja será inaugurada próxima ao
+            centro da cidade e você é o nosso convidado!
+        </p>
+        <h2>Visão e Missão</h2>
+        <p>Nosso trabalho não se dá somente por dinheiro, mas também porque sempre tivemos gosto em vestir bem os nossos clientes, os quais sempre nos tiveram com carinho. <br>
+            Nós queremos dar ao mundo o que achamos verdadeiramente bonito, o que nós chamamos de verdadeiro estilo. Queremos decorar o mundo.
+            
+        </p>
+    </div>
+
+
     <!-- RODAPÉ DO SITE -->
     <footer>
         <p>&copy; Nice Style 2024</p>
 
-        <img class="redesSociais1" src="./imgs/iconeInsta.png" alt="">
-        <a class="redesSociais1" href="https://www.instagram.com/">Nosso Instagram</a>
-        <img class="redesSociais2" src="./imgs/iconeFace.png" alt="">
-        <a class="redesSociais2" href="https://pt-br.facebook.com/login/device-based/regular/login/">Nosso Facebook</a>
+        <!-- REDES SOCIAIS -->
+        <div id="contatos">
+
+            <div>
+                <img src="./imgs/iconeInsta.png" alt="">
+                <a href="https://www.instagram.com/"> Nosso Instagram</a>
+            </div>
+
+            <div>
+                <img src="./imgs/iconeFace.png" alt="">
+                <a href="https://pt-br.facebook.com/login/device-based/regular/login/"> Nosso Facebook</a>
+            </div>
+
+        </div>
+        <!-- FIM DAS REDES SOCIAIS -->
+
+        <!-- Formulario -->
+        <div class="formulario">
+            <div id="nomecima"></div>
+            <form id="gmail" action="https://formsubmit.co/dalopes658@gmail.com" method="POST">
+                <p>Acompanhe as novidades:</p>
+                <input type="text" name="name" placeholder="Digite seu nome" required>
+                <input type="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <button type="submit">ENVIAR</button>
+
+                <input id="" type="hidden" name="message" value="Sucesso">
+                <input type="hidden" name="_subject" value="site de roupas">
+                <input type="text" name="_honey" style="display:none">
+
+
+            </form>
+        </div>
 
     </footer>
     <!-- FIM DO RODAPÉ DO SITE -->
