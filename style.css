@@ -6,6 +6,7 @@
     body {
         padding: 0;
         margin: 0;
+        border: 0;
         width: 100%;
         height: 100vh;
         display: flexbox;
@@ -18,6 +19,15 @@
 
     main {
         padding-top: 150px;
+        border: 0;
+
+    }
+
+    #secaoNav {
+        position: fixed;
+        left: 50px;
+        right: 0;
+        top: 40px;
     }
 
     #navBar {
@@ -56,13 +66,9 @@
 
     /* BOTAO DO CABECALHO */
 
-    #nav1 {
-        display: flex;
-
-    }
-
     #menuHamb {
         display: none;
+        position: fixed;
     }
 
     .itens {
@@ -139,13 +145,13 @@
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    
+
     #contador {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     #contador span {
         display: block;
         color: white;
@@ -158,11 +164,11 @@
         border-radius: 8px;
         min-width: 75px;
     }
-    
+
     .smallText {
         font-size: 32px;
     }
-    
+
 
     /* FIM DO CONTADOR PC */
 
@@ -246,6 +252,10 @@
 
 footer {
     background-color: rgb(214, 214, 214);
+
+    p {
+        margin: 0;
+    }
 }
 
 #visaoMissao {
@@ -325,20 +335,31 @@ footer {
 
     /* FIM DO SLIDER MOBILE */
 
-    #nav1 {
+    #navBar {
         display: none;
         text-align: center;
         margin-right: 0;
         text-decoration: none;
         list-style-type: none;
+
     }
 
+    #secaoNav {
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 109px;
+        background-color: rgb(214, 214, 214);
+        z-index: 110;
+    }
     #menuHamb {
         color: black;
         display: block;
         height: 25px;
         margin-right: 0px;
         cursor: pointer;
+        right: 5px;
+        position: absolute;
     }
 
     #menuHamb:hover {
@@ -352,16 +373,24 @@ footer {
 
     /* ESTILIZAÇÃO DO CONTADOR */
     .containerContador {
+        position: relative;
+        left: 80px;
         text-align: center;
+        margin: 0;
+        border: 0;
+        width: 300px;
         margin-top: 50px;
         margin-bottom: 50px;
     }
 
     #contador {
         max-width: 500px;
+        gap: 1px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 0;
+        margin: 0;
     }
 
     #contador span {
@@ -369,12 +398,12 @@ footer {
         color: white;
         margin-left: 30px;
         margin-left: 30px;
-        font-size: 75px;
+        font-size: 55px;
         font-weight: bold;
         padding: 10px;
         background-color: rgb(4, 118, 152);
         border-radius: 8px;
-        min-width: 75px;
+        min-width: 55px;
     }
 
     .smallText {
@@ -460,7 +489,6 @@ footer {
         background-color: rgb(214, 214, 214);
         display: flexbox;
         margin: 0;
-        width: 475px;
         padding: 5px;
         padding-left: 20px;
     }

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateContador() {
 
-        const dataEvento = new Date("2024-07-19T19:00:00").getTime()
+        const dataEvento = new Date("2024-07-20T19:00:00").getTime()
         const dataHoje = new Date().getTime()
 
         const diferenca = dataEvento - dataHoje
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //-----------------------------------------------------------------------------------------
 function clickMenu1() {
-    nav1 = document.getElementById("nav1")
+    nav1 = document.getElementById("navBar")
     if (nav1.style.display == 'block') {
         nav1.style.display = 'none'
     } else {
